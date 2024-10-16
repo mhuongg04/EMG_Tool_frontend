@@ -1,0 +1,28 @@
+.modebar {
+  color: white !important;
+  padding: 0 !important;
+  position: absolute;
+  left: 30px;
+
+  .modebar-btn svg {
+    fill: rgb(89, 40, 213) !important;
+    /* Màu icon */
+    height: 20px !important;
+    /* Chiều cao của icon */
+    width: 20px !important;
+    /* Chiều rộng của icon */
+  }
+}
+
+
+.modebar-btn {
+  height: 40px !important;
+  width: 40px !important;
+  margin: 0 20px !important;
+
+
+}
+
+.patient-information {
+  border: 1px solid;
+}

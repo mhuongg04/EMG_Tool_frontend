@@ -1,0 +1,85 @@
+$table-border-color: #ccc;
+$table-header-color: #f4f4f4;
+$table-row-hover-color: #f1f1f1;
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 1px solid $table-border-color;
+        padding: 10px;
+        text-align: left;
+
+        &:first-child {
+            font-weight: bold; // Làm nổi bật cột đầu tiên
+        }
+    }
+
+    th {
+        background-color: $table-header-color;
+        color: #333;
+    }
+
+    tr:hover {
+        background-color: $table-row-hover-color; // Màu nền khi hover
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9; // Màu nền cho hàng chẵn
+    }
+}
+
+// Table.scss
+
+$file-table-border-color: #ccc;
+$file-table-header-color: #f4f4f4;
+$file-table-row-hover-color: #f1f1f1;
+
+.file-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    &-header {
+        background-color: $file-table-header-color;
+    }
+
+    &-header-cell {
+        border: 1px solid $file-table-border-color;
+
+        text-align: left;
+        color: #333;
+    }
+
+    &-body {
+        tr {
+            &:hover {
+                background-color: $file-table-row-hover-color; // Màu nền khi hover
+            }
+
+            &:nth-child(even) {
+                background-color: #f9f9f9; // Màu nền cho hàng chẵn
+            }
+        }
+    }
+
+    &-row {
+        border: 1px solid $file-table-border-color; // Border cho hàng
+    }
+
+    &-cell {
+        border: 1px solid $file-table-border-color;
+        text-align: left;
+        padding: 12px;
+
+        &.actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            margin: 0;
+        }
+    }
+}

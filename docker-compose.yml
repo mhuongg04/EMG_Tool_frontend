@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  web:
+    image: "ibme-tool-fe:latest"
+    build:
+      context: .
+    ports:
+      - 8200:80
